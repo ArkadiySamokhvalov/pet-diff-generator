@@ -1,4 +1,5 @@
-[![Actions Status](https://github.com/ArkadiySamokhvalov/frontend-project-lvl2/workflows/node-ci/badge.svg)](https://github.com/ArkadiySamokhvalov/frontend-project-lvl2/actions)
+
+[![Actions Status](https://github.com/ArkadiySamokhvalov/frontend-project-lvl2/workflows/Node%20CI/badge.svg)](https://github.com/ArkadiySamokhvalov/frontend-project-lvl2/actions)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/a9b31615d2fb18b5c201/maintainability)](https://codeclimate.com/github/ArkadiySamokhvalov/frontend-project-lvl2/maintainability)
 
