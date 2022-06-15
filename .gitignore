@@ -103,11 +103,5 @@ dist
 # TernJS port file
 .tern-port
 
-# fixtures
-__fixtures__
-
-# tests
-__tests__
-
 # vscode
 .vscode
