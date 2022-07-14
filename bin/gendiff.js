@@ -5,7 +5,7 @@ import genDiff from '../src/genDiff.js';
 program
   .name('gendiff')
   .description('Compares two configuration files and shows a difference.')
-  .version('0.0.3');
+  .version('0.0.5');
 
 program
   .option('-f, --format <type>', 'output format', 'stylish');
@@ -13,6 +13,9 @@ program
 program
   .argument('<filepath1>', '')
   .argument('<filepath2>', '')
-  .action((filepath1, filepath2) => console.log(genDiff(filepath1, filepath2)));
+  .action((filepath1, filepath2) => {
+    const diff = genDiff(filepath1, filepath2, program.opts().format);
+    console.log(diff);
+  });
 
 program.parse();
