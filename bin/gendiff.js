@@ -8,7 +8,7 @@ program
   .version('0.0.3');
 
 program
-  .option('-f, --format <type>', 'output format');
+  .option('-f, --format <type>', 'output format', 'stylish');
 
 program
   .argument('<filepath1>', '')

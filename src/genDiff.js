@@ -1,30 +1,23 @@
-import getPath from './getPath.js';
-import parser from './parser.js';
+import { resolve, isAbsolute, extname } from 'path';
+import { cwd } from 'node:process';
+import { readFileSync } from 'node:fs';
+import parse from './parser.js';
+import buildTree from './buildTree.js';
+import formatOutput from './formatters/index.js';
 
-export default (filepath1, filepath2) => {
-  const path1 = getPath(filepath1);
-  const path2 = getPath(filepath2);
+const getPath = (filepath) => (isAbsolute(filepath) ? filepath : resolve(cwd(), filepath));
+const parseContent = (filepath) => {
+  const absolutePath = getPath(filepath);
+  const path = readFileSync(absolutePath, 'utf8');
+  const ext = extname(filepath).slice(1);
+  return parse(path, ext);
+};
 
-  const object1 = parser(path1);
-  const object2 = parser(path2);
+export default (filepath1, filepath2, format = 'stylish') => {
+  const file1 = parseContent(filepath1);
+  const file2 = parseContent(filepath2);
+  const diffInfo = buildTree(file1, file2);
+  const formattedTree = formatOutput(diffInfo, format);
 
-  const sortKeys1 = Object.keys(object1).sort();
-  const sortKeys2 = Object.keys(object2).sort();
-
-  const uniqKeys = [...new Set([].concat(...sortKeys1, ...sortKeys2))];
-
-  const result = uniqKeys.map((key) => {
-    if (Object.prototype.hasOwnProperty.call(object1, key)) {
-      if (Object.prototype.hasOwnProperty.call(object2, key)) {
-        if (object1[key] === object2[key]) {
-          return `    ${key}: ${object1[key]}`;
-        }
-        return [`  - ${key}: ${object1[key]}`, `  + ${key}: ${object2[key]}`];
-      }
-      return `  - ${key}: ${object1[key]}`;
-    }
-    return `  + ${key}: ${object2[key]}`;
-  });
-
-  return `{\n${result.flat().join('\n')}\n}`;
+  return formattedTree;
 };
