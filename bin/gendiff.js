@@ -5,7 +5,7 @@ import genDiff from '../src/genDiff.js';
 program
   .name('gendiff')
   .description('Compares two configuration files and shows a difference.')
-  .version('0.0.5');
+  .version('0.1.0');
 
 program
   .option('-f, --format <type>', 'output format', 'stylish');
