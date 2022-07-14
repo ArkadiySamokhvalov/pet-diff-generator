@@ -7,10 +7,12 @@ const getFixturePath = (filename) => join(__dirname, '..', '__fixtures__', filen
 const readFile = (filename) => readFileSync(getFixturePath(filename), 'utf-8');
 let expectedResultStylish;
 let expectedResultPlain;
+let expectedResultJson;
 
 beforeAll(() => {
   expectedResultStylish = readFile('expected-result_stylish.txt');
   expectedResultPlain = readFile('expected-result_plain.txt');
+  expectedResultJson = readFile('expected-result_json.txt');
 });
 
 test('gendiff relative/absolute path', () => {
@@ -36,6 +38,13 @@ test('gendiff json plain', () => {
   expect(genDiff(testFile1, testFile2, 'plain')).toBe(expectedResultPlain);
 });
 
+test('gendiff json json', () => {
+  const testFile1 = getFixturePath('file1.json');
+  const testFile2 = getFixturePath('file2.json');
+
+  expect(genDiff(testFile1, testFile2, 'json')).toBe(expectedResultJson);
+});
+
 test('gendiff yml stylish', () => {
   const testFile1 = '__fixtures__/file1.yml';
   const testFile2 = '__fixtures__/file2.yml';
@@ -48,4 +57,11 @@ test('gendiff yml plain', () => {
   const testFile2 = '__fixtures__/file2.yml';
 
   expect(genDiff(testFile1, testFile2, 'plain')).toBe(expectedResultPlain);
+});
+
+test('gendiff yml json', () => {
+  const testFile1 = '__fixtures__/file1.yml';
+  const testFile2 = '__fixtures__/file2.yml';
+
+  expect(genDiff(testFile1, testFile2, 'json')).toBe(expectedResultJson);
 });
