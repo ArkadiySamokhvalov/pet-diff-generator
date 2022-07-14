@@ -7,9 +7,9 @@ import formatOutput from './formatters/index.js';
 
 const getPath = (filepath) => (isAbsolute(filepath) ? filepath : resolve(cwd(), filepath));
 const parseContent = (filepath) => {
+  const ext = extname(filepath).slice(1);
   const absolutePath = getPath(filepath);
   const path = readFileSync(absolutePath, 'utf8');
-  const ext = extname(filepath).slice(1);
   return parse(path, ext);
 };
 

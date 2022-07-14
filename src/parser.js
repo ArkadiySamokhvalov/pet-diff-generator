@@ -6,5 +6,5 @@ export default (path, ext) => {
   } if (ext === 'yml' || ext === 'yaml') {
     return load(path);
   }
-  throw new Error(`Invalid file extension: '${ext}'! Try supported formats.`);
+  throw new Error(`Invalid file extension: '.${ext}'! Try supported formats.`);
 };

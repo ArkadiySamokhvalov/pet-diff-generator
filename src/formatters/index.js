@@ -10,6 +10,6 @@ export default (data, format) => {
     case 'json':
       return JSON.stringify(data, null, '  ');
     default:
-      throw new Error(`Invalid file format type: '.${format}'! Try supported file formats.`);
+      throw new Error(`Invalid file formatter type: '${format}'! Try supported file formats.`);
   }
 };
