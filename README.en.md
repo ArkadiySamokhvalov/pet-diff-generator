@@ -5,7 +5,7 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a9b31615d2fb18b5c201/test_coverage)](https://codeclimate.com/github/ArkadiySamokhvalov/frontend-project-lvl2/test_coverage)
 
 # Languages
-[![ru](https://img.shields.io/badge/lang-ru-blue.svg)](https://codeclimate.com/github/ArkadiySamokhvalov/frontend-project-lvl2/blob/main/README.md)
+[![ru](https://img.shields.io/badge/lang-ru-blue.svg)](https://github.com/ArkadiySamokhvalov/diff-generator/blob/main/README.md)
 
 # Description: 
 **Generator of difference** is the CLI program that generate difference between two files. Supported formats: JSON, XML, YAML.
