@@ -5,7 +5,7 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a9b31615d2fb18b5c201/test_coverage)](https://codeclimate.com/github/ArkadiySamokhvalov/diff-generator/test_coverage)
 
 # Языки
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](https://codeclimate.com/github/ArkadiySamokhvalov/diff-generator/blob/main/README.en.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/ArkadiySamokhvalov/diff-generator/blob/main/README.en.md)
 
 # Описание: 
 **Генератор различий** — это программа CLI, определяющая разницу между двумя структурами данных. Поддерживаемые форматы: JSON, XML, YAML.
