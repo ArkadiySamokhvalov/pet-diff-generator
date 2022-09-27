@@ -1,5 +1,3 @@
-### Hexlet tests:
-[![Actions Status](https://github.com/ArkadiySamokhvalov/diff-generator/workflows/hexlet-check/badge.svg)](https://github.com/ArkadiySamokhvalov/diff-generator/actions)
 [![Actions Status](https://github.com/ArkadiySamokhvalov/diff-generator/workflows/Node%20CI/badge.svg)](https://github.com/ArkadiySamokhvalov/diff-generator/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a9b31615d2fb18b5c201/maintainability)](https://codeclimate.com/github/ArkadiySamokhvalov/diff-generator/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a9b31615d2fb18b5c201/test_coverage)](https://codeclimate.com/github/ArkadiySamokhvalov/diff-generator/test_coverage)
