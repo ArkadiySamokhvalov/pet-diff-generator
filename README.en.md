@@ -1,8 +1,7 @@
 [![Actions Status](https://github.com/ArkadiySamokhvalov/frontend-project-lvl2/workflows/Node%20CI/badge.svg)](https://github.com/ArkadiySamokhvalov/frontend-project-lvl2/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/a9b31615d2fb18b5c201/maintainability)](https://codeclimate.com/github/ArkadiySamokhvalov/frontend-project-lvl2/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a9b31615d2fb18b5c201/test_coverage)](https://codeclimate.com/github/ArkadiySamokhvalov/frontend-project-lvl2/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/8f10cbe9e351c67a52b9/maintainability)](https://codeclimate.com/github/ArkadiySamokhvalov/diff-generator/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/8f10cbe9e351c67a52b9/test_coverage)](https://codeclimate.com/github/ArkadiySamokhvalov/diff-generator/test_coverage)
 
-# Languages
 [![ru](https://img.shields.io/badge/lang-ru-blue.svg)](https://github.com/ArkadiySamokhvalov/diff-generator/blob/main/README.md)
 
 # Description: 
